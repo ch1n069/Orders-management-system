@@ -1,5 +1,23 @@
-{% extends 'base.html' %}{% block content %}
+{% extends 'base.html' %}{% block content %} {% include 'accounts/status.html' %}
 <br />
+
+<style>
+    body {
+        background-color: #ebeff5;
+    }
+    
+    #total-orders {
+        background-color: #4cb4c7;
+    }
+    
+    #orders-delivered {
+        background-color: #7abecc;
+    }
+    
+    #orders-pending {
+        background-color: #7cd1c0;
+    }
+</style>
 <div class="row">
     <div class="col-md-5">
         <h5>CUSTOMERS: {{total_customers}}</h5>
